@@ -2,8 +2,14 @@
 #Losujemy liczbe od 1 do 100
 
 from random import randint
+while True:
+    try:
+        twojaPróba = int(input("Podaj swoja liczbe od 1 do 100: ")) #tutaj wpisujemy naszą liczbę
+        break
+    except ValueError:
+        print("Podaj liczbę smieszku :)")
 
-twojaPróba = int(input("Podaj swoja liczbe od 1 do 100: ")) #tutaj wpisujemy naszą liczbę
+
 
 print("Twója liczba to : {twojaPróba} ".format(twojaPróba=twojaPróba))
 
